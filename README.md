@@ -10,4 +10,4 @@ Add and manage expenses with details such as name, amount, date, category, and d
 View total balance dynamically based on recorded expenses
 Delete expenses with a confirmation prompt
 Download expense data as a CSV file
-Visualize spending trends using interactive charts
+Visualize spending trends using interactive charts .
