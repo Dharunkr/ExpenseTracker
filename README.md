@@ -6,8 +6,8 @@ Frontend: HTML, CSS, JavaScript
 Database: (Specify database, e.g., MySQL, PostgreSQL, etc.)
 Chart Library: Chart.js
 Features
-Add and manage expenses with details such as name, amount, date, category, and description
-View total balance dynamically based on recorded expenses
-Delete expenses with a confirmation prompt
-Download expense data as a CSV file
+Add and manage expenses with details such as name, amount, date, category, and description, 
+View total balance dynamically based on recorded expenses, 
+Delete expenses with a confirmation prompt, 
+Download expense data as a CSV file, 
 Visualize spending trends using interactive charts .
