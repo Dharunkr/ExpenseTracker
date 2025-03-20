@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/* Dark Modern Minimal CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    
+    
+    margin: 0;
+    padding-top: 300px; /* Add space at the top */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+.expense-form input, .expense-form select, .expense-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.expense-form input, .expense-form select {
+    background: #252525;
+    color: #fff;
+}
+
+/* 🔥 Improved Glowing Neon Pink Button */
+.expense-form button {
+    background: #ff007f; /* Neon Pink */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 8px #ff007f, 0 0 12px #ff007f, 0 0 16px rgba(255, 0, 127, 0.8); /* Smooth Neon Glow */
+}
+
+/* ✨ On Hover: Reduce Glow, Darker Shade */
+.expense-form button:hover {
+    background: #99004d; /* Darker Neon Pink */
+    box-shadow: 0 0 2px #99004d, 0 0 4px rgba(153, 0, 77, 0.3), 0 0 6px rgba(153, 0, 77, 0.2);
+ /* Softer Glow */
+    transform: scale(1.05); /* Slight Button Lift */
+}
+
+/* 🩸 Glowing Red Table Headers */
+.expense-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #252525;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.expense-history th, .expense-history td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+/* 🩷 Glowing Neon Pink Table Headers */
+/* 🩷 Glowing Neon Pink Table Headers */
+.expense-history th {
+    background: #ff007f; /* Neon Pink */
+    color: white;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f; /* Stronger Neon Glow */
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f, 0 0 45px rgba(255, 0, 127, 0.8);
+}
+
+/* 🩷 On Hover: Darker Glow */
+.expense-history th:hover {
+    background: #99004d; /* Darker Neon Pink */
+    text-shadow: 0 0 8px #99004d, 0 0 16px #99004d, 0 0 24px rgba(153, 0, 77, 0.8);
+    box-shadow: 0 0 10px #99004d, 0 0 20px #99004d, 0 0 35px rgba(153, 0, 77, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* 📊 Styling for Charts Section */
+.charts {
+    margin-top: 30px;
+    padding: 20px;
+    background: #252525;
+    border-radius: 10px;
+}
+
+.bottom-left-image {
+    position: fixed;
+    bottom: 1px;
+    left: 10px;
+    width: 300px; 
+    
+   
+}
+
+
+.bottom-leftt-image {
+    position: fixed;
+   
+    left: 10px;
+    width: 300px; 
+    
+   
+}
+
+
+.csv-button{
+	 position: fixed;
+    top: 100px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.csv-button:hover{
+	background-color: #d6006b;
+}
+
+.chart-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chart-btn:hover {
+    background-color: #d6006b;
+}

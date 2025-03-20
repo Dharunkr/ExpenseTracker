@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <h2>Total Ammount: <span id="totalBalance">$0</span></h2>
+        
+        <button onclick="window.location.href='charts.html'" class="chart-btn">📊 View Charts</button>
+      <button id="downloadCsvBtn" class="csv-button">📥 Download CSV</button>
+<script>
+    document.getElementById("downloadCsvBtn").addEventListener("click", downloadCSV);
+</script>
+        
+        <input type="checkbox" id="recurringExpense" UNCHECKED> ADD RECCURENCE
+        
+
+        <div class="expense-form">
+            <h3>Add Expense</h3>
+            <form id="expenseForm">
+                <input type="text" id="expenseName" placeholder="Expense Name" required>
+                <input type="text" id="expenseDescription" placeholder="Description">
+                <input type="number" id="expenseAmount" placeholder="Amount" required>
+                <input type="date" id="expenseDate" required>
+                
+                <select id="expenseCategory">
+                    <option value="Food">Food</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Ornaments">Ornaments</option>
+                    <option value="Medical">Medical</option>
+                </select>
+
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+
+        <div class="expense-history">
+            <h3>Expense History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Action</th> <!-- ✅ Added Action column for delete button -->
+                    </tr>
+                </thead>
+                <tbody id="expenseTableBody"></tbody>
+            </table>
+        </div>
+
+        <div class="charts">
+            <h3>Spending Trends</h3>
+            <canvas id="expenseChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- ✅ Ensures form submission and deletion -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .chart-container { width: 80%; margin: auto; }
+        button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <button onclick="window.location.href='index.html'">⬅ Back</button>
+
+    <h1>Expense Analytics</h1>
+
+    <div class="chart-container">
+        <h2>Category-wise Expenses</h2>
+        <canvas id="categoryChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Monthly Expense Trend</h2>
+        <canvas id="monthlyChart"></canvas>
+    </div>
+
+    <script src="charts.js"></script>
+</body>
+</html>
